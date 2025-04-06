@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8og7n646t0sb"]
+
+[ext_resource type="PackedScene" uid="uid://c73h2migu546s" path="res://scenes/character.tscn" id="1_4j70j"]
+[ext_resource type="PackedScene" uid="uid://dehlmwqet1gtw" path="res://scenes/platform.tscn" id="2_tcrif"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_f18k5"]
+specular_color = Color(1.63645e-06, 0.73901, 0.489139, 1)
+
+[node name="level" type="Node2D"]
+
+[node name="GOAL" type="Sprite2D" parent="."]
+modulate = Color(0, 0.737334, 0.484948, 1)
+position = Vector2(880.515, 133.074)
+scale = Vector2(-34.2977, 39.1476)
+texture = SubResource("CanvasTexture_f18k5")
+
+[node name="PLAYER" parent="." instance=ExtResource("1_4j70j")]
+position = Vector2(133, 158)
+scale = Vector2(2, 2)
+
+[node name="PLATFORM" parent="." instance=ExtResource("2_tcrif")]
+position = Vector2(98, 179)
+scale = Vector2(0.2, 0.2)
+
+[node name="CAGE" type="Node" parent="."]
+
+[node name="StaticBody2D2" parent="CAGE" instance=ExtResource("2_tcrif")]
+position = Vector2(-583, 584)
+scale = Vector2(10, 10)
+
+[node name="StaticBody2D5" parent="CAGE" instance=ExtResource("2_tcrif")]
+position = Vector2(-977, -198)
+scale = Vector2(10, 1)
+
+[node name="StaticBody2D3" parent="CAGE" instance=ExtResource("2_tcrif")]
+position = Vector2(-332, -142)
+scale = Vector2(1, 4)
+
+[node name="StaticBody2D4" parent="CAGE" instance=ExtResource("2_tcrif")]
+position = Vector2(1116, -160)
+scale = Vector2(1, 4)
