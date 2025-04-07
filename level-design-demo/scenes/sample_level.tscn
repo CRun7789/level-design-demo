@@ -39,6 +39,10 @@ scale = Vector2(0.52, 0.1)
 position = Vector2(667, 488)
 scale = Vector2(0.52, 0.1)
 
+[node name="PLATFORM20" parent="." instance=ExtResource("2_tcrif")]
+position = Vector2(535, 298)
+scale = Vector2(0.52, 0.1)
+
 [node name="PLATFORM4" parent="." instance=ExtResource("2_tcrif")]
 position = Vector2(262, 108)
 scale = Vector2(0.2, 0.1)
@@ -49,10 +53,6 @@ scale = Vector2(0.2, 0.1)
 
 [node name="PLATFORM5" parent="." instance=ExtResource("2_tcrif")]
 position = Vector2(687, 234)
-scale = Vector2(0.2, 0.1)
-
-[node name="PLATFORM7" parent="." instance=ExtResource("2_tcrif")]
-position = Vector2(632, 299)
 scale = Vector2(0.2, 0.1)
 
 [node name="PLATFORM16" parent="." instance=ExtResource("2_tcrif")]
@@ -69,7 +69,7 @@ scale = Vector2(0.68, 0.1)
 
 [node name="PLATFORM10" parent="." instance=ExtResource("2_tcrif")]
 position = Vector2(510, 489)
-scale = Vector2(0.2, 0.1)
+scale = Vector2(0.2, 0.122209)
 
 [node name="PLATFORM6" parent="." instance=ExtResource("2_tcrif")]
 position = Vector2(306, 238)
@@ -89,7 +89,7 @@ scale = Vector2(0.078, 2)
 
 [node name="PLATFORM19" parent="." instance=ExtResource("2_tcrif")]
 position = Vector2(530, 496)
-scale = Vector2(0.078, 0.7)
+scale = Vector2(0.078, 1.18)
 
 [node name="PLATFORM11" parent="." instance=ExtResource("2_tcrif")]
 position = Vector2(519, 436)
